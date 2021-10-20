@@ -130,7 +130,7 @@ end
 %% Surface view
 right = ' /Applications/freesurfer/subjects/%s/surf/rh.inflated:overlay=/Applications/freesurfer/subjects/%s/rh.FEF_native_K15.mgz';
 left  = ' /Applications/freesurfer/subjects/%s/surf/lh.inflated:overlay=/Applications/freesurfer/subjects/%s/lh.FEF_native_K15.mgz';
-full  = strcat('freeview -f',right,' ',left,'  -cam azimuth 100 -ss screenshot1.jpg');
+full  = strcat('freeview -f',right,' ',left,'  -cam azimuth 200 roll -20 dolly 1.2 elevation 20 -ss screenshot1.jpg');
 system(sprintf(full,subjname,subjname,subjname,subjname));
 
 %% another surface view
